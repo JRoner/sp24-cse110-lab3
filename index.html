@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Meeting Minutes Notes - 4/10/24</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="/images/book.ico">
+
+  </head>
+
+  <body>
+    <!-- File header -->
+    <header>
+        <div>
+            <h1>Surfside Software Dev Team Meeting - 2 <img src="images/book.ico" alt="book" width="30" height="30"></h1>
+            <h3><i>Coordination/Check-in and Brainstorming</i></h1>
+            <h3>Wed, 10 April 2024</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="https://github.com/JRoner/Lab2_Starter">GitHub Repository</a></li>
+                <li><a href="https://app.slack.com/">Slack</a></li>
+                <li><a href="https://zoom.us/">Zoom</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content of file -->
+    <main>
+        <div>
+            <section>
+                <h2>Attendance</h2>
+                <ul>
+                    <li>Jacob</li>
+                    <li>Isaac</li>
+                    <li>Sam</li>
+                    <li>John</li>
+                    <li>Caleb</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section>
+                <h2>Agenda</h2>
+                <ol>
+                    <li>Short Group Bonding Activity</li>
+                    <li>Review of Unfinished Buisness from Last Meeting</li>
+                    <li>Dev Progress Check-in</li>
+                    <li>Brainstoriming Session for Features and Design</li>
+                    <li>indentifying New Business and Technical Requirements</li>
+                    <li>Addressing comments, Questions, and Concerns</li>
+                    <li>Closing Remarks</li>
+                </ol>
+                <br>
+            </section>
+            <hr>
+
+            <section>
+                <h2>Review</h2>
+                <ul>
+                    <li>
+                        <details><summary>Finalization of project roles and responsibilities.</summary>
+                            <p>
+                                <ul>
+                                    <li>Jacob - Team Lead</li>
+                                    <li>Isaac - Senior Dev</li>
+                                    <li>Sam - Designer</li>
+                                    <li>John - Junior Dev</li>
+                                    <li>Caleb - Senior Dev</li>
+                                    <li>Shawn - Project Manager</li>
+                                </ul>
+
+                            </p>
+                        </details>
+                    </li>
+                    <li>Reiterated project roadmap.</li>
+                </ul>
+                
+            </section>
+            <hr>
+
+            <section>
+                <h2>New Business</h2>
+                <ol>
+                    <li><b>John's Introduction:</b></John> Because John is a new memeber, we introduced him to the project and collectivly decided what his starting role would be.</li>
+                    <li><b>Brainstoriming:</b> The team brainstormed new ideas for the projects architecture, as well as new features. Refer to reference doc shared in the slack for the list of ideas we collected.</li> 
+                    <li><b>Design Considerations:</b> Sam lead a discussion on design aesthetics, UI/UX principles relevant to the project.</li>
+                    <li><b>Technical Requirements:</b> Isaac and Caleb outlined our current technical requirments, <em>as well as important technical changes that the team may need to make in the near future.</em></li>
+                    <li><strong><b>NOTE:</b> Next weeks meeting has been cancelled, be prepared to meet in two weeks. </strong></li>
+                </ol>
+                <br>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                  </audio>
+                <br>
+                <img src="images/whiteboard.jpeg" alt="Project architecture" width="300" height="200">
+
+                <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </section>
+            <hr>
+
+            <section>
+                <h2>Misc comments/ questions/ concerns</h2>
+                <ol>
+                    <li>Jacob: <i>"I would appreaciate it if the devs could be a little more dilagent about updating the documentation."</i></li>
+                    <li>Isaac: <i>"Just want you all to know that, for efficiency reasons, we will be migrating virtual meetings from zoom to slack."</i> </li> 
+                    <li>Caleb: <i>"I wont be able to make it to the next meeting, so Isaac will give my report for me."</i></li>
+                </ol>
+            </section>
+
+            <br>
+            <hr>
+
+            <selction>
+                <p><b>Submit additional questions/concerns:</b></P>
+                <form>
+                    <fieldset>
+                        <label for="name">Enter Name:</label>
+                        <input list="names" id="name" name="name"><br><br>
+                        <label for="date">Enter Date:</label>
+                        <input type="date" /> <br><br>
+
+                        <datalist id="names">
+                            <option value="Jacob">
+                            <option value="Caleb">
+                            <option value="Isaac">
+                            <option value="Sam">
+                            <option value="John">
+                            <option value="Shawn">
+                        </datalist>
+
+                        <label for="question"> Question:</label>
+                        <textarea id="question" name="question" rows = "4" cols="50"></textarea><br><br>
+                        <button type="button" onclick="alert('Submitted, thank you!')">Submit</button>
+                    </fieldset>
+                </form>
+            </selction>
+
+            <br>
+            <hr>
+
+            <section>
+                <p><b>Feedback:</b></p>
+
+                <form>
+                    <fieldset>
+                        <label for="present">Where you at the meeting?</label>
+
+                        <select name="present" id="present">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                
+                    
+                        <br>
+                        <br>
+
+                        <label for="rating">Rate the meeting notes:</label>
+                        <input type="radio" id="Perfect" name="rate">
+                        <label for="Perfect">Perfect</label>
+                        <input type="radio" id="Good" name="rate">
+                        <label for="Good">Good</label>
+                        <input type="radio" id="Fine" name="rate">
+                        <label for="Fine">Fine</label>
+                        <input type="radio" id="Bad" name="rate">
+                        <label for="Bad">Bad</label>
+                        <input type="radio" id="Terrible" name="rate">
+                        <label for="Terrible">Terrible</label>
+                        
+
+                        <br>
+                        <br>
+
+
+                        <form>
+                            <label for="presence">How often do you attend meetings:</label><br>
+                            <input type="checkbox" id="Always" name="presence">
+                            <label for="Alway"> Always</label><br>
+                            <input type="checkbox" id="Sometimes" name="presence">
+                            <label for="Sometimes">Sometimes</label><br>
+                            <input type="checkbox" id="Never" name="presence">
+                            <label for="Never">Never</label>
+                          </form>
+                          
+
+
+                        <br>
+                        <br>
+
+                        <button type="button" onclick="alert('Submitted, thank you!')">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <br>
+
+
+        </div>
+        
+
+
+
+
+    </main>
+
+    <!-- File footer -->
+    <footer>
+        <hr>
+        <span>
+            <p><em>Meeting Minutes - 4/10/24</em></p>
+        </span>
+        <span>
+            <p> <strong> Surfside Software&#8482;</strong></p>
+        </span>
+
+        <br>
+
+    </footer>
+  </body>
+
+
+</html>
