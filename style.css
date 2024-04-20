@@ -1,0 +1,63 @@
+/*styles the header*/
+#header{
+    background-color: #2f2b3a;
+}
+
+/*styles the nav bar*/
+.nav{
+    background-color: color-mix(in srgb, color(display-p3 0.048 0.042 0.103 / 1) 30%, color(display-p3 0.103 0.089 0.133 / 1) 70%);
+}
+
+/*styles the body*/
+body{
+    background-color: #121212;
+    color: white;
+    
+}
+
+/*styles h1 headers*/
+h1 {
+    color:hsl(249.2, 50%, 90%);
+}
+
+/*styles the attendance section*/
+.attendance {
+    background-color: #282828;
+}
+
+/*styles the agenda section*/
+.agenda {
+    background-color: #282828; /* fall back for display-p3*/
+    background-color: color(display-p3 0.1569 0.1569 0.1569); 
+}
+
+/*styles the review section*/
+.review {
+    background-color: #282828;
+}
+
+/*styles the new buisness section*/
+.newbusiness {
+    background-color: #282828;
+}
+
+/*styles the misc section*/
+.misc {
+    background-color: #282828;
+}
+
+/*styles the questions section*/
+.questions {
+    background-color: #282828;
+}
+
+/*styles the feedback section*/
+.feedback {
+    background-color: #282828;
+}
+
+/*styles heyperlinks*/
+a {
+    color:rgb(56, 43, 240);
+}
+
