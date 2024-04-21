@@ -233,8 +233,16 @@ section.content{
         display: block; 
         width: 100vw; 
         box-sizing: border-box;
-        margin: 10px 0; 
-        padding: 10px; 
+
+        margin-top: 1vh;
+        margin-right: 1vw;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 0%;
+        padding-bottom: 2%;
         
     }
     
