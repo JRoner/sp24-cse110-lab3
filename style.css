@@ -1,3 +1,8 @@
+:root{
+    --background1: #121212;
+    --background2: #282828;
+}
+
 /*styles the header*/
 #header{
     background-color: #2f2b3a;
@@ -10,7 +15,7 @@
 
 /*styles the body*/
 body{
-    background-color: #121212;
+    background-color: var(--background1, #121212);
     color: white;
     
 }
@@ -22,7 +27,7 @@ h1 {
 
 /*styles the attendance section*/
 .attendance {
-    background-color: #282828;
+    background-color: var(--background2, #282828);
 }
 
 /*styles the agenda section*/
