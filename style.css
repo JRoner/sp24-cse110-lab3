@@ -3,6 +3,12 @@
     --background2: #282828;
 }
 
+
+@font-face {
+    font-family: "Roboto-c";
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVj2ZhZI2eCN5jzbjEETS9weq8-19eLDwM9.woff2);
+  }
+
 /*styles the header*/
 .header{
     background-color: #2f2b3a;
@@ -11,6 +17,8 @@
     padding-right: 5vw;
     padding-top: 1px;
     padding-bottom: 1px;
+
+    font-family:Verdana;
 
     
 }
@@ -120,7 +128,7 @@ body{
     display: inline-block;
     vertical-align:top;
 
-    height:230px;
+    height:300px;
     width: 45%; 
     box-sizing: border-box;
     
@@ -137,7 +145,7 @@ body{
     margin: 0.5vh 0vw 0.5vh 0vw;
     display: inline-block;
     vertical-align:top;
-    height:230px;
+    height:300px;
     width: 45%; 
     box-sizing: border-box;
     min-height: 200px;
@@ -212,6 +220,19 @@ body{
     width: 100%; /* Ensure it scales based on the parent size */
     box-sizing: border-box; /* Include padding and borders in the width calculation */
 }
+
+#question {
+    width: 40vw;
+    height: 10vh;
+}
+
+@media screen and (max-width: 700px){
+    #question{
+        width: 65vw;
+        height: 8vh;
+    }
+}
+
 
 .submit-flex{
     display:flex;
