@@ -7,7 +7,16 @@
 @font-face {
     font-family: "Roboto-c";
     src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVj2ZhZI2eCN5jzbjEETS9weq8-19eLDwM9.woff2);
-  }
+}
+
+/*universal selector*/
+* {
+    box-sizing: border-box;
+}
+
+p{
+    color:white;
+}
 
 /*styles the header*/
 .header{
@@ -44,6 +53,10 @@
 /*styles h1 headers*/
 h1 {
     color:hsl(249.2, 50%, 90%);
+}
+
+h2:has(+ ul){
+    text-decoration:underline;
 }
 
 /*styles the nav bar*/
@@ -104,13 +117,16 @@ h1 {
 
 
 
-
 /*styles the body*/
 body{
     background-color: var(--background1, #121212);
     color: white;
     margin: auto;
     
+}
+
+a[href*="github"]:hover{
+    color:purple;
 }
 
 
@@ -128,10 +144,28 @@ body{
     display: inline-block;
     vertical-align:top;
 
-    height:300px;
+    height:320px;
     width: 45%; 
     box-sizing: border-box;
     
+}
+
+ul > li{
+    padding-top: 5px;
+}
+
+ol li{
+    padding-top: 5px;
+}
+
+section + hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main ~ hr{
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .agenda {
@@ -145,7 +179,7 @@ body{
     margin: 0.5vh 0vw 0.5vh 0vw;
     display: inline-block;
     vertical-align:top;
-    height:300px;
+    height:320px;
     width: 45%; 
     box-sizing: border-box;
     min-height: 200px;
@@ -178,12 +212,15 @@ body{
 
 }
 
+section.content{
+    background-color: #282828; 
+}
+
 @media screen and (max-width: 1080px) {
     .header{
         display: block; 
         width: 100vw; 
         box-sizing: border-box;
-        
         padding: 10px; 
     }
     .nav{
@@ -192,7 +229,7 @@ body{
         box-sizing: border-box;
          
     }
-    .attendance {
+    .attendance, .agenda, .content {
         display: block; 
         width: 100vw; 
         box-sizing: border-box;
@@ -200,20 +237,7 @@ body{
         padding: 10px; 
         
     }
-    .agenda {
-        display: block; 
-        width: 100vw; 
-        box-sizing: border-box;
-        margin: 10px 0; 
-        padding: 10px; 
-    }
-    .content {
-        display: block; 
-        width: 100vw; 
-        box-sizing: border-box;
-        margin: 10px 0; 
-        padding: 10px; 
-    }
+    
 }
 
 #submit-field {
@@ -272,30 +296,31 @@ body{
     gap: 1px 1px;
     margin-left:20px;
     margin-bottom:20px;
+
+    & div{
+        justify-self: start;
+    }
 }
 
 .item-a {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    justify-self: start;
+    
 }
 
 .item-b {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
-    justify-self: start;
 }
 
 .item-c {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    justify-self: start;
 }
 
 .item-d {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    justify-self: start;
     align-self: center;
 }
 
