@@ -117,23 +117,35 @@
                 <p><b>Submit additional questions/concerns:</b></P>
                 <form>
                     <fieldset>
-                        <label for="name">Enter Name:</label>
-                        <input list="names" id="name" name="name"><br><br>
-                        <label for="thedate">Enter Date:</label>
-                        <input type="date" id="thedate" > <br><br>
+                        <div class="submit-flex">
+                            <div class="box1">
+                                <label for="name">Enter Name:</label><br>
+                                <input list="names" id="name" name="name">
+                            </div>
+                            <div class="box2">
+                                <label for="thedate">Enter Date:</label><br>
+                                <input type="date" id="thedate" >
+                            </div>
 
-                        <datalist id="names">
-                            <option value="Jacob">
-                            <option value="Caleb">
-                            <option value="Isaac">
-                            <option value="Sam">
-                            <option value="John">
-                            <option value="Shawn">
-                        </datalist>
+                            
+                                <datalist id="names">
+                                    <option value="Jacob">
+                                    <option value="Caleb">
+                                    <option value="Isaac">
+                                    <option value="Sam">
+                                    <option value="John">
+                                    <option value="Shawn">
+                                </datalist>
 
-                        <label for="question"> Question:</label>
-                        <textarea id="question" name="question" rows = "4" cols="50"></textarea><br><br>
-                        <button type="button" onclick="alert('Submitted, thank you!')">Submit</button>
+                            <div class="box3">
+                                <label for="question"> Question:</label><br>
+                                <textarea id="question" name="question" rows = "4" cols="50"></textarea>
+                            </div>
+                            <div class="box4">
+                                <button type="button" onclick="alert('Submitted, thank you!')">Submit</button>
+                            </div>
+                            
+                        </div>
                     </fieldset>
                 </form>
             </section>
@@ -144,50 +156,51 @@
 
                 <form>
                     <fieldset>
-                        <label for="present">Where you at the meeting?</label>
+                        <div class="feedback-grid">
+                            <div class="item-a">
+                                
+                                <p>Where you at the meeting?</p>
 
-                        <select name="present" id="present">
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                
-                    
-                        <br>
-                        <br>
-
-                        <p>Rate the meeting notes:</p>
-                        <input type="radio" id="Perfect" name="rate">
-                        <label for="Perfect">Perfect</label>
-                        <input type="radio" id="Good" name="rate">
-                        <label for="Good">Good</label>
-                        <input type="radio" id="Fine" name="rate">
-                        <label for="Fine">Fine</label>
-                        <input type="radio" id="Bad" name="rate">
-                        <label for="Bad">Bad</label>
-                        <input type="radio" id="Terrible" name="rate">
-                        <label for="Terrible">Terrible</label>
+                                <select name="present" id="present">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
                         
+                            <div class="item-b">
+                                <p>Rate the meeting notes:</p>
+                                <input type="radio" id="Perfect" name="rate">
+                                <label for="Perfect">Perfect</label>
+                                <input type="radio" id="Good" name="rate">
+                                <label for="Good">Good</label>
+                                <input type="radio" id="Fine" name="rate">
+                                <label for="Fine">Fine</label>
+                                <input type="radio" id="Bad" name="rate">
+                                <label for="Bad">Bad</label>
+                                <input type="radio" id="Terrible" name="rate">
+                                <label for="Terrible">Terrible</label>
+                            </div>  
 
+
+
+                            <div class="item-c">
+                                <p>How often do you attend meetings:</p>
+                                <input type="checkbox" id="Always" name="presence">
+                                <label for="Always"> Always</label><br>
+                                <input type="checkbox" id="Sometimes" name="presence">
+                                <label for="Sometimes">Sometimes</label><br>
+                                <input type="checkbox" id="Never" name="presence">
+                                <label for="Never">Never</label>
+                                
+                                
+
+                            </div>
+
+                            <div class="item-d">
+                                <button type="button" onclick="alert('Submitted, thank you!')">Submit</button>
+                            </div>
+                        </div>
                         <br>
-                        <br>
-
-
-                        
-                            <p>How often do you attend meetings:</p>
-                            <input type="checkbox" id="Always" name="presence">
-                            <label for="Always"> Always</label><br>
-                            <input type="checkbox" id="Sometimes" name="presence">
-                            <label for="Sometimes">Sometimes</label><br>
-                            <input type="checkbox" id="Never" name="presence">
-                            <label for="Never">Never</label>
-                        
-                          
-
-
-                        <br>
-                        <br>
-                        <button type="button" onclick="alert('Submitted, thank you!')">Submit</button>
-                        
                     </fieldset>
                 </form>
             </section>

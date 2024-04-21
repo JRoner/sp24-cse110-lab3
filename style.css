@@ -30,8 +30,8 @@
 #image1{
     max-height:200px; /*had no where to use this, so I threw it in here*/
     max-width: 200px;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -190,6 +190,72 @@ body{
         margin: 10px 0; 
         padding: 10px; 
     }
+}
+
+
+.submit-flex{
+    display:flex;
+    flex-direction: column;
+
+    justify-content:center;
+    align-items: start;
+    gap: 10px 10px;
+    padding-left: 18px;
+    
+}
+
+.box1{
+    order:1;
+}
+
+.box2{
+    order:2;
+}
+
+.box3{
+    order:3;
+}
+.box4{
+    order:4;
+    
+}
+
+
+.feedback-grid{
+    display:grid;
+    grid-template-columns: [col1-first] 50% [col2-second] 50% [col3-last];
+    grid-template-rows: [row1-first] 50% [row2] 50% [row3-last];
+    
+    justify-content: center;
+    align-items: start;
+    gap: 1px 1px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.item-a {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: start;
+}
+
+.item-b {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    justify-self: start;
+}
+
+.item-c {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: start;
+}
+
+.item-d {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: start;
+    align-self: center;
 }
 
 
