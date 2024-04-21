@@ -4,65 +4,124 @@
 }
 
 /*styles the header*/
-#header{
+.header{
     background-color: #2f2b3a;
-}
-
-/*styles the nav bar*/
-.nav{
-    background-color: color-mix(in srgb, color(display-p3 0.048 0.042 0.103 / 1) 30%, color(display-p3 0.103 0.089 0.133 / 1) 70%);
-}
-
-/*styles the body*/
-body{
-    background-color: var(--background1, #121212);
-    color: white;
     
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
 }
+
+
 
 /*styles h1 headers*/
 h1 {
     color:hsl(249.2, 50%, 90%);
 }
 
+/*styles the nav bar*/
+.nav{
+    position:relative;
+    background-color: color-mix(in srgb, color(display-p3 0.048 0.042 0.103 / 1) 30%, color(display-p3 0.103 0.089 0.133 / 1) 70%);
+    height: 50px;
+    overflow:hidden;
+}
+
+.nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.center-nav{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.nav a:hover {
+    background-color: #a8c7fa;
+    color: black;
+}
+
+@media screen and (max-width: 880px) {
+
+    .nav{
+        height: 140px;
+    }
+    .nav a {
+      float: none;
+      display: block;
+    }
+    
+    .center-nav a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+}
+
+
+
+
+/*styles the body*/
+body{
+    background-color: var(--background1, #121212);
+    color: white;
+    margin: auto;
+    
+}
+
+
+
 /*styles the attendance section*/
 .attendance {
     background-color: var(--background2, #282828);
+
+    border: 4px solid #2f2b3a;
+    border-radius: 4mm;
+
+    padding: 0in 0.5in 0in 0.5in;
+
+    margin: 0vh 5vw 0vh 5vw;
+    
 }
 
 /*styles the agenda section*/
-.agenda {
+.content {
     background-color: #282828; /* fall back for display-p3*/
     background-color: color(display-p3 0.1569 0.1569 0.1569); 
+
+    border-width: 4px;
+    border-radius: 4mm;
+    border-style: solid;
+    border-color: #2f2b3a;
+
+    
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+
+    margin-top: 0vh;
+    margin-right: 5vw;
+    margin-bottom: 0vh;
+    margin-left: 5vw;
+
 }
 
-/*styles the review section*/
-.review {
-    background-color: #282828;
-}
-
-/*styles the new buisness section*/
-.newbusiness {
-    background-color: #282828;
-}
-
-/*styles the misc section*/
-.misc {
-    background-color: #282828;
-}
-
-/*styles the questions section*/
-.questions {
-    background-color: #282828;
-}
-
-/*styles the feedback section*/
-.feedback {
-    background-color: #282828;
-}
-
-/*styles heyperlinks*/
-a {
-    color:rgb(56, 43, 240);
-}
 
