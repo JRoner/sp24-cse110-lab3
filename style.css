@@ -12,10 +12,7 @@
     padding-top: 1px;
     padding-bottom: 1px;
 
-    margin-top: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto;
+    
 }
 
 #title{
@@ -143,6 +140,8 @@ body{
     height:230px;
     width: 45%; 
     box-sizing: border-box;
+    min-height: 200px;
+    
     
 }
 
@@ -172,26 +171,47 @@ body{
 }
 
 @media screen and (max-width: 1080px) {
+    .header{
+        display: block; 
+        width: 100vw; 
+        box-sizing: border-box;
+        
+        padding: 10px; 
+    }
+    .nav{
+        display: block; 
+        width: 100vw; 
+        box-sizing: border-box;
+         
+    }
     .attendance {
         display: block; 
-        width: 100%; 
+        width: 100vw; 
+        box-sizing: border-box;
         margin: 10px 0; 
         padding: 10px; 
+        
     }
     .agenda {
         display: block; 
-        width: 100%; 
+        width: 100vw; 
+        box-sizing: border-box;
         margin: 10px 0; 
         padding: 10px; 
     }
     .content {
         display: block; 
-        width: 100%; 
+        width: 100vw; 
+        box-sizing: border-box;
         margin: 10px 0; 
         padding: 10px; 
     }
 }
 
+#submit-field {
+    width: 100%; /* Ensure it scales based on the parent size */
+    box-sizing: border-box; /* Include padding and borders in the width calculation */
+}
 
 .submit-flex{
     display:flex;
@@ -256,6 +276,16 @@ body{
     grid-row: 2 / 3;
     justify-self: start;
     align-self: center;
+}
+
+.footer-title{
+    float:left;
+    padding-left: 5vw;
+}
+
+.footer-brand{
+    float:right;
+    padding-right: 5vw;
 }
 
 
