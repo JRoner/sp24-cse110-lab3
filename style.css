@@ -27,6 +27,13 @@
     text-align: center;
 }
 
+#image1{
+    max-height:200px; /*had no where to use this, so I threw it in here*/
+    max-width: 200px;
+    height: 80px;
+    width: 80px;
+}
+
 
 
 /*styles h1 headers*/
