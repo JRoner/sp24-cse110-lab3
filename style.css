@@ -18,6 +18,15 @@
     margin-left: auto;
 }
 
+#title{
+    text-decoration: underline hsl(249.2, 50%, 90%);
+    text-align: center;
+}
+
+#subtitle{
+    text-align: center;
+}
+
 
 
 /*styles h1 headers*/
