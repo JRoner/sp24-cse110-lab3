@@ -1,6 +1,8 @@
 :root{
     --background1: #121212;
     --background2: #282828;
+    --navcolor: color-mix(in srgb, color(display-p3 0.048 0.042 0.103 / 1) 30%, color(display-p3 0.103 0.089 0.133 / 1) 70%);
+    --background3: color(display-p3 0.1569 0.1569 0.1569);
 }
 
 
@@ -62,7 +64,7 @@ h2:has(+ ul){
 /*styles the nav bar*/
 .nav{
     position:relative;
-    background-color: color-mix(in srgb, color(display-p3 0.048 0.042 0.103 / 1) 30%, color(display-p3 0.103 0.089 0.133 / 1) 70%);
+    background-color: var(--navcolor, #2f2b3a);
     height: 50px;
     overflow:hidden;
 }
@@ -189,8 +191,7 @@ main ~ hr{
 
 /*styles the agenda section*/
 .content {
-    background-color: #282828; /* fall back for display-p3*/
-    background-color: color(display-p3 0.1569 0.1569 0.1569); 
+    background-color: var(--background3, #282828);
 
     border-width: 4px;
     border-radius: 4mm;
@@ -305,7 +306,7 @@ section.content{
     margin-left:20px;
     margin-bottom:20px;
 
-    & div{
+    &div{
         justify-self: start;
     }
 }
