@@ -306,7 +306,7 @@ section.content{
     margin-left:20px;
     margin-bottom:20px;
 
-    &div{
+    &div {
         justify-self: start;
     }
 }
