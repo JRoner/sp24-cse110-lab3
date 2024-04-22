@@ -307,7 +307,7 @@ section.content{
     margin-bottom:20px;
 
     /*nested selector*/
-    & > p {
+    & > div {
         justify-self: start;
     }
 }
