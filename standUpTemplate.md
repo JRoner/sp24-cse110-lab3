@@ -23,9 +23,10 @@ Location:
     - Each participant describes objectives for the day
 
 4. Blockers:
-    -Participants mention any obstacles that might impede their progress.
+    - Participants mention any obstacles that might impede their progress.
 
-5. Assistance Requests
+6. Assistance Requests
+    - Requests for help with goals and objectives
 
 ### Notes
 ---
