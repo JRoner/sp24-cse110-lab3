@@ -223,6 +223,7 @@ section.content{
         width: 100vw; 
         box-sizing: border-box;
         padding: 10px; 
+        
     }
     .nav{
         display: block; 
@@ -244,6 +245,8 @@ section.content{
         padding-right: 6%;
         padding-top: 0%;
         padding-bottom: 2%;
+
+        height:auto;
         
     }
     
